@@ -1,0 +1,333 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"ba",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"gru",
+				"Grunt"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Joinity/Landing page/Development/Landing Joinity/Developer/samples/sample-04/index.html",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-config.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/ddbb-replace",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/templates/single-lesson.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/curso.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/home.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/topbar.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/preloader.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/sidebars.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/profile.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/footer.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/js/app.coffee",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/home.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/profile.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_shortcodes/se_shortcodes_courses.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/cursos.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/settings/general.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_widgets/se_widget_user_badges.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/examen.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/widget-right.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/header.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_widgets/se_widget_user_badges_old.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/buttons.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/page-templates/cursos.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/member-header.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress-content-sidebar.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/pmpro-customizations/pmpro-customizations.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/pmpro-customizations/templates/account.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/inc/template-tags.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sidebar-woocommerce-sidebar-right.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/app.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/member-header_old.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sidebar-buddypress-left.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sidebar-bbpress.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress-full-content.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress-sidebar-content.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress_old.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/index.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/settings.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/plugins.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/notifications.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/members.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/forms.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/banner.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/scripts/functions.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/members-loop.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/warning-tips.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/tables.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/buddypress/members/single/notifications/notifications-loop.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/my-tests.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/ui/modal.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_core/secore.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/klein/klein-login.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/functions.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/page-templates/mis-tests.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_shortcodes/se_shortcodes_exams.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_shortcodes/se_shortcodes_exams_old.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_widgets/se_widget_user_level.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_shortcodes/se_shortcodes_courses_old.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/js/start.coffee",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/page-templates/front-page.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/js/app.js",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/page-templates/front-page-old.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/js/start.js",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/js/background-video.js",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/no-results.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/searchform.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/search.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/search-original.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/scripts/preloader.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/.gitignore",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/js/order-list.js",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/themes/klein-2.0.4/sexy-english/css/less/views/dark-room.less",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_shortcodes/se_shortcodes_vocabulary.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/secourses.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/settings/settings.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses/se_courses/se_courses_page.php",
+		"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/build002.sublime-project"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/fguirao/Dropbox/Bueninvento/Proyectos/01 Activos/Sexy English/Plataforma/Development/Build 002/wp-content/plugins/se_courses"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"APROBADO",
+			"dotted",
+			"table",
+			"come ba",
+			"soporte",
+			"follow",
+			"vive en",
+			"left-pan",
+			"cursos disponib",
+			"cursos",
+			"header",
+			"cursos-section",
+			"each-curse",
+			"todavía",
+			"subnav",
+			"*/\n",
+			"subnav",
+			"ver",
+			"user",
+			"admin",
+			"message",
+			"gears",
+			"user-profile",
+			"badges",
+			"item-header",
+			"message",
+			"item-buttons",
+			"search-message-form",
+			"bp-klein-page-title",
+			"id=\"buddypress\"",
+			"item-header-avatar",
+			"item-list-tabs",
+			"break-row",
+			"<?",
+			"viewin",
+			"viewing",
+			"friend",
+			"klein_user_nav",
+			"avatar",
+			"klein-user-nav-user-profile",
+			"bp-klein-dropdown-menu",
+			"pull-right bp-klein-dropdown-menu",
+			"friend",
+			"bp-klein-dropdown-menu",
+			"pull-right bp-klein-dropdown-menu",
+			"friend",
+			"friendship-button",
+			"video",
+			"#myvideo",
+			"no superado",
+			"h4",
+			"solicita",
+			"carousels",
+			"apúntate",
+			"nivel",
+			"transition",
+			"functions.php",
+			"type=",
+			"type=text",
+			"dark_room",
+			"reading",
+			"md-3",
+			"vocabul",
+			"small-image",
+			"muéstrame",
+			"curso",
+			"scrip",
+			"paso",
+			"siguiente paso",
+			"regresa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "landingjoinity.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
