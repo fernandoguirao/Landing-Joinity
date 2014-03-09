@@ -589,10 +589,13 @@ button:active {
   padding: 0;
   width: 30px;
   height: 30px;
-  background: url("../../../common-files/icons/menu-icon.png") 50% no-repeat;
+  /*background: url("../img/menu-icon.png") 50% no-repeat;*/
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.fui-list {
+  position: relative;
 }
 .navbar .navbar-toggle:before {
   display: none;
@@ -935,7 +938,7 @@ section * {
   width: 67px;
   height: 67px;
   margin: 0 50px;
-  background: url("../../../common-files/img/header/btn-play.png") no-repeat;
+  background: url("../img/btn-play.png") no-repeat;
 }
 @media (max-width: 991px) {
   .header-23-sub .hero-unit .btn-play {
@@ -1314,11 +1317,11 @@ section * {
 }
 .content-34 .box-1 {
   padding-top: 105px;
-  background: url('../../../common-files/img/content/icon-1.png') 15px 0 no-repeat;
+  background: url('../img/icon-1.png') 15px 0 no-repeat;
 }
 .content-34 .box-2 {
   padding-top: 85px;
-  background: url('../../../common-files/img/content/icon-2.png') 15px 0 no-repeat;
+  background: url('../img/icon-2.png') 15px 0 no-repeat;
 }
 .content-35 {
   position: relative;

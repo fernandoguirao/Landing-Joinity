@@ -14,6 +14,7 @@
         <!-- end -->
         <link rel="stylesheet" href="static/flat-ui/css/animations.css">
         <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/custom.css">
     </head>
 
     <body>
@@ -32,7 +33,9 @@
                     <div class="row">
                         <div class="navbar col-sm-12" role="navigation">
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle"></button>
+                                <button type="button" class="navbar-toggle">
+                                    <span class="fui-list"></span>
+                                </button>
                                 <a class="brand" href="#">Startup</a>
                             </div>
                             <div class="navbar-collapse collapse">
@@ -56,8 +59,20 @@
                     </div>
                 </div>
             </header>
-            <section class="header-23-sub bg-midnight-blue">
-                <div class="background">&nbsp;</div>
+
+<!-- <section class="video">
+  <div class="fondo-rosa"></div>
+  <div id="bgVideo2" class="background"></div>
+  <div class="holder">
+    <div class="container centrador">
+      <h6>Learning</h6>
+    </div>
+  </div>
+</section> -->
+
+            <section class="header-23-sub bg-midnight-blue overflow-hidden">
+                <!-- <div class="background">&nbsp;</div> -->
+                <div id="bgVideo" class="background" data-stellar-ratio="0.5" data-stellar-vertical-offset="0"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -72,10 +87,11 @@
             </section>
 
             <!-- content-33  -->
-            <section class="content-33">
+            <section class="content-33 overflow-hidden">
+                <div id="bgVideo2" class="background" data-stellar-ratio="0.5" data-stellar-vertical-offset="0"></div>
                 <div class="container">
                     <p class="lead">
-                        Documentation is really important for a developer. Right from it you get to know the product. We tried to describe all the components and provide the set-up instructions.
+                        Docu    mentation is really important for a developer. Right from it you get to know the product. We tried to describe all the components and provide the set-up instructions.
                     </p>
                 </div>
             </section>
@@ -323,6 +339,8 @@
         <script src="static/flat-ui/js/startup-kit.js"></script>
         <script src="static/js/froogaloop.min.js"></script>
         <script src="static/flat-ui/js/jquery.parallax.min.js"></script>
+        <script src="static/flat-ui/js/jquery.backgroundvideo.min.js"></script>
+        <script src="static/flat-ui/js/jquery.stellar.min.js"></script>
         <script src="static/js/script.js"></script>
     </body>
 </html>

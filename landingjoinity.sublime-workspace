@@ -23,6 +23,17 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Sample 25</title>\n        <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n        <link rel=\"shortcut icon\" href=\"static/flat-ui/images/favicon.ico\">\n        <link rel=\"stylesheet\" href=\"static/flat-ui/bootstrap/css/bootstrap.css\">\n        <link rel=\"stylesheet\" href=\"static/flat-ui/css/flat-ui.css\">\n        <!-- Using only with Flat-UI (free)-->\n        <link rel=\"stylesheet\" href=\"static/flat-ui/css/icon-font.css\">\n        <!-- end -->\n        <link rel=\"stylesheet\" href=\"static/flat-ui/css/animations.css\">\n        <link rel=\"stylesheet\" href=\"static/css/style.css\">\n    </head>\n\n    <body>\n\n        <div class=\"mask\"></div>\n        <div class=\"popup-video\">\n            <iframe id=\"pPlayer\"\n            src=\"http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer\"\n            frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n\n        <div class=\"page-wrapper\">\n            <!-- header-23 -->\n            <header class=\"header-23\">\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"navbar col-sm-12\" role=\"navigation\">\n                            <div class=\"navbar-header\">\n                                <button type=\"button\" class=\"navbar-toggle\"></button>\n                                <a class=\"brand\" href=\"#\">Startup</a>\n                            </div>\n                            <div class=\"navbar-collapse collapse\">\n                                <ul class=\"nav pull-right\">\n                                    <li><a href=\"#\">Home</a></li>\n                                    <li><a href=\"#\">Work</a></li>\n                                    <li><a href=\"#\">Blog</a></li>\n                                    <li><a href=\"#\">Contact</a></li>\n                                </ul>\n                                <ul class=\"subnav\">\n                                    <li><a href=\"#\">Privacy</a></li>\n                                    <li><a href=\"#\">Terms</a></li>\n                                    <li><a href=\"#\">Advertise</a></li>\n                                    <li><a href=\"#\">Affiliates</a></li>\n                                    <li><a href=\"#\">Newsletter</a></li>\n                                    <li><a href=\"#\">About</a></li>\n                                    <li><a href=\"#\">Contact Us</a></li>\n                                </ul>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </header>\n            <section class=\"header-23-sub bg-midnight-blue\">\n                <div class=\"background\">&nbsp;</div>\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-sm-12\">\n                            <div class=\"hero-unit\">\n                                <strong>Startup Framework</strong>\n                                <a class=\"btn-play\" id=\"play\" href=\"#\">Play</a>\n                                <span>Now you have the design</span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n\n            <!-- content-33  -->\n            <section class=\"content-33\">\n                <div class=\"container\">\n                    <p class=\"lead\">\n                        Documentation is really important for a developer. Right from it you get to know the product. We tried to describe all the components and provide the set-up instructions.\n                    </p>\n                </div>\n            </section>\n\n\n            <section class=\"content-34\">\n                <div id=\"content-34-pt-main\" class=\"page-transitions pt-perspective\">\n                    <div class=\"pt-page pt-page-current slide-1\">\n                        <section>\n                            <div class=\"container\">\n                                <div class=\"row\">\n                                    <div class=\"col-sm-6\">\n                                        <h2>Ready to Code</h2>\n\n                                        <p class=\"lead\">Startup Design Framework contains components and complex blocks which can\n                                            easily be integrated into almost any design.</p>\n                                    </div>\n                                </div>\n                                <div class=\"row\">\n                                    <div class=\"col-sm-3 box-1\">\n                                        <h3>HTML5, Less, CSS3</h3>\n\n                                        <p>We used checked-out technologies to give the best results.</p>\n                                    </div>\n                                </div>\n                                <div class=\"row\">\n                                    <div class=\"col-sm-3 box-2\">\n                                        <h3>Based on Bootstrap</h3>\n\n                                        <p>HTML layout is based on one of the common frameworks at this time - Bootstrap v\n                                            2.3.2.</p>\n                                    </div>\n                                </div>\n                            </div>\n                        </section>\n                    </div>\n                    <div class=\"pt-page slide-2\">\n                        <section>\n                            <div class=\"container\">\n                                <div class=\"row\">\n                                    <div class=\"col-sm-6\">\n                                        <h2>Perfect for Your Project</h2>\n                                        <p class=\"lead\">\n                                            Startup Framework will help you to find an awesome form for your startup project in a short time. It’s easy!\n                                        </p>\n                                    </div>\n                                </div>\n                                <div class=\"row\">\n                                    <div class=\"col-sm-3 box-1\">\n                                        <h3>Save Your Time</h3>\n                                        <p>\n                                            Use your time for generating new ideas for your startup. Take a break from the routine.\n                                        </p>\n                                    </div>\n                                </div>\n                                <div class=\"row\">\n                                    <div class=\"col-sm-3 box-2\">\n                                        <h3>Money Economy</h3>\n                                        <p>\n                                            Startups can save money on design and code and spend it on concept and functionality.\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </section>\n                    </div>\n                    <div class=\"pt-page slide-3\">\n                        <section>\n                            <div class=\"container\">\n                                <div class=\"row\">\n                                    <div class=\"col-sm-6\">\n                                        <h2>Documentation</h2>\n                                        <p class=\"lead\">\n                                            Startup Design Framework contains components and complex blocks which can easily be integrated into almost any design.\n                                        </p>\n                                    </div>\n                                </div>\n                                <div class=\"row\">\n                                    <div class=\"col-sm-3 box-1\">\n                                        <h3>High Resolution</h3>\n                                        <p>\n                                            We did a 2.5K size high resolution photo that will suit even for a very large web site.\n                                        </p>\n                                    </div>\n                                </div>\n                                <div class=\"row\">\n                                    <div class=\"col-sm-3 box-2\">\n                                        <h3>Easy to use</h3>\n                                        <p>\n                                            To get started, you select the desired sample and base the entire website on it.\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </section>\n                    </div>\n                </div>\n                <div class=\"pt-controls\">\n                    <ol class=\"pt-indicators\">\n                        <li class=\"active\"></li>\n                        <li></li>\n                        <li></li>\n                    </ol>\n                </div>\n            </section>\n\n            <!-- content-35  -->\n\n            <section class=\"content-35\">\n                <div class=\"background\">\n                    <div class=\"container\">\n                        <div class=\"row\">\n                            <div class=\"col-sm-4\">\n                                <div></div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-sm-5 col-sm-offset-5\">\n                            <h2>Features</h2>\n\n                            <p class=\"lead\">The most important parts of the Startup Framework are Samples and the UI Kit that\n                                includes a set of different components. The samples consist of a set of 25 pages. </p>\n                            <a href=\"#\" class=\"btn btn-success\">Buy Now</a>\n\n                            <div class=\"row columns\">\n                                <div class=\"col-sm-5\">\n                                    <h3>Smart Layers</h3>\n\n                                    <p>Just put the image with your App screen inside Smart Layer and get the photo.</p>\n                                </div>\n                                <div class=\"col-sm-5 col-sm-offset-2\">\n                                    <h3>Video Tutorials</h3>\n\n                                    <p>Video tutorials show you how to make a site from design to code. </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n\n            <!-- content-23  -->\n            <section class=\"content-23 v-center custom-bg\">\n                <div>\n                    <div class=\"container\">\n                        <div class=\"hero-unit hero-unit-bordered\">\n                            <h1>Scenic Nature</h1>\n                        </div>\n                    </div>\n                </div>\n                <a class=\"control-btn fui-arrow-down\" href=\"#\"> </a>\n            </section>\n\n            <!-- content-32  -->\n            <section class=\"content-32\">\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-sm-8 col-sm-offset-2\">\n                            <h3>Documentation</h3>\n                            <p class=\"lead\">\n                                The most important parts of the Startup Framework are Samples and the UI Kit that includes a set of different components. The samples consist of a set of 25 pages. Each of these pages you can use as-is or with new blocks from a UI Kit.\n                            </p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"features\">\n                    <div class=\"container\">\n                        <div class=\"row\">\n                            <div class=\"col-sm-3\">\n                                <h6>High Resolution</h6>\n                                We did a 2.5K size high resolution photo that will suit even for a very large web site.\n                            </div>\n                            <div class=\"col-sm-4 col-sm-offset-1\">\n                                <h6>Easy to Use</h6>\n                                Blocks fixed to 12 Grid system. It allows you to find understanding between the designer and developer.\n                            </div>\n                            <div class=\"col-sm-3 col-sm-offset-1\">\n                                <h6>Many Components</h6>\n                                To get started, you select the desired sample and base the entire website on it.\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n\n            <!-- content-35  -->\n            <section class=\"content-35\">\n                <div class=\"background\">\n                    <div class=\"container\">\n                        <div class=\"row\">\n                            <div class=\"col-sm-4\">\n                                <div>\n                                    <img src=\"static/img/img-1.jpg\" alt=\"\">\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-sm-6 col-sm-offset-5\">\n                            <h2>HQ Images</h2>\n                            <p class=\"lead\">\n                                We prepared some high-quality photos, that you can use in your startup projects. When you have to show your application or website on iPhone, iPad or Macbook you can use these images. Just put the image inside Smart Layer.\n                            </p>\n                            <div class=\"row columns\">\n                                <div class=\"col-sm-6\">\n                                    <h3>High Resolution</h3>\n                                    <p>\n                                        We did a 2.5K size high resolution photo that will suit even for a very large web site.\n                                    </p>\n                                </div>\n                                <div class=\"col-sm-6\">\n                                    <h3>Easy to use</h3>\n                                    <p>\n                                        To get started, you select the desired sample and base the entire website on it.\n                                    </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n\n            <!-- content-36  -->\n            <section class=\"content-36\">\n                <div class=\"container\">\n                    <h2>We’ve created the product that will help your startup to look even better</h2>\n                    <a class=\"btn btn-success\" href=\"#\">Buy Now</a>\n                    <p>\n                        You can decide whether to create your site using UI Kit blocks or samples\n                    </p>\n                </div>\n            </section>\n        </div>\n        <!-- Placed at the end of the document so the pages load faster -->\n        <script src=\"static/flat-ui/js/jquery-1.10.2.min.js\"></script>\n        <script src=\"static/flat-ui/js/bootstrap.min.js\"></script>\n        <script src=\"static/flat-ui/js/modernizr.custom.js\"></script>\n        <script src=\"static/flat-ui/js/page-transitions.js\"></script>\n        <script src=\"static/flat-ui/js/jquery.scrollTo-1.4.3.1-min.js\"></script>\n        <script src=\"static/flat-ui/js/startup-kit.js\"></script>\n        <script src=\"static/js/froogaloop.min.js\"></script>\n        <script src=\"static/flat-ui/js/jquery.parallax.min.js\"></script>\n        <script src=\"static/js/script.js\"></script>\n    </body>\n</html>",
+			"file": "Developer/landing/index.html",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 16367,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -146,7 +157,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -161,6 +172,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"menu-icon.png",
+			"\"flat-ui/",
+			"../../",
 			"APROBADO",
 			"dotted",
 			"table",
@@ -238,6 +252,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"static/flat-ui/",
+			"\"static/flat-ui",
+			"../"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -248,8 +265,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Developer/landing/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15534,
+								15534
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -259,7 +307,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -291,7 +339,7 @@
 	"project": "landingjoinity.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
