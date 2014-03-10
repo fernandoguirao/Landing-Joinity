@@ -31,14 +31,16 @@ $(document).ready(function() {
     });
 
     // STELLAR JS
-    $(window).stellar();
+    // $(window).stellar();
 
 // VIDEO BACKGROUND
 
     //resize video
-    $('.video').height($(window).height());
+    altura = $(window).height()
+    $('.video').height(altura);
+    $('#section-01').css({"max-height":altura});
     $(window).resize(function() {
-        $('.video').height($(window).height());
+        $('.video,#section-01').height($(window).height());
     });
     
     //show the icon
