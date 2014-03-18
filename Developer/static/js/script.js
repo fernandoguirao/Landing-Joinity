@@ -58,19 +58,19 @@ $(document).ready(function() {
         "videoid": "video01",
         "width": 846,
         "height": 476,
-        "filename": "sexy",
-        "types": ["mp4", "ogg", "webm"]
+        "filename": "joinity",
+        "types": ["mp4", "ogv", "webm"]
     });
 
-    $.backgroundVideo($('#bgVideo2'), {
-        "align": "centerXY",
-        "videoid": "video02",
-         "path": "static/media/",
-        "width": 846,
-        "height": 476,
-        "filename": "sexy",
-        "types": ["mp4", "ogg", "webm"]
-    });
+    // $.backgroundVideo($('#bgVideo2'), {
+    //     "align": "centerXY",
+    //     "videoid": "video02",
+    //      "path": "static/media/",
+    //     "width": 846,
+    //     "height": 476,
+    //     "filename": "sexy",
+    //     "types": ["mp4", "ogg", "webm"]
+    // });
     
     // FIN DE VIDEO BACKGROUND
 });
