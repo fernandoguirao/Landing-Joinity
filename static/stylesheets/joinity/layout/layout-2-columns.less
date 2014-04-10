@@ -1,0 +1,108 @@
+.div-tabla {
+  display:table;
+  min-height:643px;
+  width:100%;
+}
+.page-large .div-tabla {
+  min-height:1024px;
+}
+
+.no-banner .div-tabla {
+  min-height:1035px;
+}
+
+.no-banner {
+   background-color:@claro;
+}
+
+.two-columns-layout {
+  /*
+height:auto;
+  min-height: 1000px;
+*/
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  display:table-row;
+}
+
+.left-column {
+  .make-xs-column(8);
+  .make-sm-column(7);
+  .make-md-column(7);
+  background-color:white;
+  /* height:100%; */
+  float:none!important;
+  display:table-cell;
+  vertical-align: top;
+  overflow:hidden;
+  @media(max-width:@screen-xs-max) {
+    position: absolute;
+    width:100%;
+    height:inherit!important;
+    padding: 30px 17px !important;
+    min-height:1035px;
+  }
+}
+
+.right-column {
+  .make-xs-column(4);
+  .make-sm-column(5);
+  .make-md-column(5);
+  .transition(top,.2s);
+  float:none!important;
+  display:table-cell;
+  vertical-align: top;
+  padding-top:13px!important;
+  @media (max-width:@screen-xs-max) {
+/*
+    position:absolute;
+    margin-left:100%;
+*/
+/*
+    top: -13px;
+    padding-top: 52px!important;
+*/
+    width:100%;
+    z-index:1;
+    position:absolute;
+    margin-left:-100%;
+    top:-10px;
+    .transition(top,.5s);
+    background-color: @grisclaro!important;
+    /* position: fixed; */
+    
+    height: inherit;
+    min-height:1300px;
+    padding:10px!important;
+    &.right-closed {
+      /* margin-left:100%; */
+      margin-left: -100%!important;
+      top: -200%!important;
+    }
+  }
+/*
+  @media (max-width:@screen-sm-max) {
+    top: -13px;
+    padding-top: 52px!important;
+  }
+*/
+  /* height:100%; */
+  background-color:@grismuyclaro;
+  .inside {
+    @media (max-width:@screen-xs-max) {
+      padding:0 13px;
+      .btn-block.gris.tiny {
+        padding: 9px 0 12px!important;
+        left: 0!Important;
+        margin-left: 0!important;
+        background-color: transparent;
+        border-width: 0;
+        color: @oscuro;
+        border-bottom-color:@grisclaro;
+        border-bottom-width:1px;
+        .border-radius(0);
+      }
+    }
+  }
+}

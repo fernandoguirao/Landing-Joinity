@@ -1,0 +1,127 @@
+.progress-top-bar {
+  form {
+    margin-top:-96px;
+    @media(max-width:@screen-xs-max) {
+      margin-top:-180px;
+      &.invite {
+        label,input{
+          width:100%!important;
+        }
+        label {
+          padding-top:30px!important;
+        }
+        
+      }
+    }
+    .transition(margin-top .3s);
+    position:absolute;
+    width:100%;
+    .form-group {
+      display:block;
+      .form-control.giant,label {
+        width:50%;
+        display:inline-block;
+        float:left;
+        font-family:proxima;
+        font-weight:100;
+        font-size:24px;
+        background-color:#fede5d;
+        color:@oscuro!important;
+        .border-radius(0);
+        border:0;
+        text-align:center;
+        @media (max-width:@screen-sm-max) {
+          font-size:19px;
+        }
+        @media (max-width:@screen-xs-max) {
+          font-size:17px;
+          width:100%;
+          margin-bottom:0;
+          &.second {
+            margin-top:0;
+          }
+        }
+        &::-webkit-input-placeholder {
+          color:#a68a4d;
+        }
+        &::-moz-placeholder{
+          color:#a68a4d;
+        }
+        .placeholder {
+          color:#a68a4d;
+        }
+        &:focus {
+          background-color:@amarillo;
+          &::-webkit-input-placeholder{
+            color:@oscuro;
+          }
+          &::-moz-placeholder{
+            color:@oscuro;
+          }
+          .placeholder {
+            color:@oscuro;
+          }
+        }
+      }
+    }
+    &.down {
+      margin-top:-11px;
+    }
+    &.invite {
+      .form-group {
+        label {
+          width:25%;
+          padding-top:25px;
+          padding-bottom:25px;
+          top:10px;
+          position:relative;
+          @media (max-width:@screen-sm-max) {
+            padding-top:27px;
+            padding-bottom:15px;
+            height:84px;
+            padding-left:9px;
+            padding-right:9px;
+          }
+          @media (max-width:@screen-xs-max) {
+            padding-top:18px;
+            padding-bottom:15px;
+            height:84px;
+            padding-left:21px;
+            padding-right:21px;
+            
+          }
+        }
+        .form-control.giant {
+          &.second {
+            width:75%;
+            text-align:left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logbtn {
+  margin-left: -2px;
+}
+
+.darken {
+  width: 100%;
+  height: 100%;
+  background-color: @verde;
+  z-index: -1;
+  position: fixed;
+  content: "";
+  .opacity(0);
+  .transition(opacity .5s);
+  &.visible {
+    z-index: 2000;
+    content: "";
+    .opacity(.9);
+  }
+}
+
+.modal-invite {
+  cursor:pointer;
+}

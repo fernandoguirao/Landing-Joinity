@@ -1,0 +1,36 @@
+.container-2-columns {
+  .first-column {
+    
+    .make-sm-column(4);
+    .make-md-column(4);
+    text-transform:uppercase;
+    font-size:12px;
+    top:4px;
+  }
+  .second-column {
+    
+    .make-sm-column(8);
+    .make-md-column(8);
+    font-size:15px;
+  }
+  li {
+    .make-row();
+    margin-bottom:12px;
+  }
+}
+
+.single-column {
+  .first-column {
+    .make-xs-column(4);
+    @media(max-width:@screen-xs-max){
+      width:100%;
+      margin-bottom:26px;
+    }
+  }
+  .second-column {
+    .make-xs-column(8);
+    @media(max-width:@screen-xs-max){
+      width:100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.pasos {
+  position:relative;
+  display:block;
+  overflow:hidden;
+  li {
+    position:absolute;
+    left:0;
+    .transition(opacity .4s);
+    .opacity(0);
+    &.activo {
+      .opacity(1);
+      position:relative;
+    }
+  }
+  ul.pages {
+    clear:both;
+    position:relative;
+    text-align:center;
+    padding-top:30px;
+    li {
+      .opacity(1);
+      position:relative;
+      display: inline-block;
+      margin: 0 10px;
+      & > div {
+        background-color:@amarillo;
+        color:@oscuro;
+        .border-radius(100px);
+        width:28px;
+        height:28px;
+      }
+      &:first-child,&:last-child {
+        & > div {
+          width:11px;
+          height:11px;
+          margin:0 2px;
+          position: relative;
+          top:-10px;
+        }
+      }
+      &.activo {
+        & > div {
+          width:52px;
+          height:52px;
+          font-size:22px;
+          font-weight:lighter;
+          font-family:proxima;
+          text-align:center;
+          padding-top:9px;
+          position: relative;
+          top:-9px;
+        }
+      }
+    }
+  }
+}

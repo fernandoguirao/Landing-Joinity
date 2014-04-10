@@ -1,0 +1,169 @@
+.edit-page {
+  @media(max-width:@screen-xs-max){
+    padding:0 6px;
+  }
+  &.crea {
+    padding-top:0;
+    .descripciones {
+      padding:24px 30px;
+      display:inline-block;
+      p {
+        font-weight:300;
+        font-family:proxima;
+        b.aficiones {
+          color:@azul;
+        }
+        b.compras {
+          color:@rojo;
+        }
+        b.family {
+          color:@verde;
+        }
+      }
+    }
+  }
+  .crea-botones,.crea-banner {
+    margin-top: 76px;
+    text-align: center;
+    padding: 0 3%;
+    & > div, & > a {
+      float:left;
+      width:31%;
+      @media(max-width:@screen-xs-max) {
+        width:100%;
+      }
+      /* max-width:200px; */
+      height:170px;
+      padding:23px 0px;
+      .border-radius(4px);
+      text-align:center;
+      margin:5px 1%;
+      position:relative;
+      max-height:170px;
+      cursor:pointer;
+      .oculto {
+        position: absolute;
+        width: 220%;
+        display: block;
+        top: -316px;
+        left: 49%;
+        font-size: 21px;
+        .opacity(0);
+        .transition(opacity .5s);
+        color:@gris;
+      }
+      &.compras {
+        .oculto {
+          left:-55%!important;
+        }
+      }
+      &.family {
+        .oculto {
+          left:-162%!important;
+        }
+      }
+      &:hover {
+        &:before {
+          .background-size(160%);
+        }
+        .oculto {
+          .opacity(1);
+        }
+        img {
+          top:-4px;
+          width:90px;
+          height:84px;
+        }
+        p {
+          margin-top:9px;
+        }
+      }
+      p {
+        font-size:18.5px;
+        font-family:proxima;
+        font-weight:normal;
+        margin-top:15px;
+        .transition(margin-top .2s);
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 105px;
+      }
+      &:before {
+        position:absolute;
+        width:100%;
+        height:100%;
+        background-image:url("../images/ui/transparencia@2x.png");
+        .cover();
+        .background-size(110%);
+        .transition(background-size .8s);
+        left:0;
+        top:0;
+        content:"";
+      }
+      img {
+        width:83px;
+        height:78px;
+        position:relative;
+        top:4px;
+        .transition(all .3s);
+      }
+      &.aficiones {
+        background-color:@azul;
+      }
+      &.compras {
+        background-color:@rojo;
+      }
+      &.family {
+        background-color:@verde;
+      }
+    }
+  }
+  .pages {
+    padding-top:55px!important;
+  }
+  &.step02 {
+    padding-top:0;
+  }
+  .container-2-columns {
+    margin-top:70px;
+    .first-column {
+      top:20px;
+    }
+    .bootstrap-select {
+      margin-top: 9px;
+    }
+  }
+  .form-group {
+    margin-top: 16px;
+  }
+  .prettycheckbox, .prettyradio {
+    display: block;
+    label {
+     top:3px;
+    }
+  }
+  .form-group.normal.grisclaro .task + a.checked + label {
+    text-decoration:none!important;
+  }
+  .busca-contactos {
+    margin-bottom:19px;
+    margin-top:14px;
+  }
+  .horas {
+    label {
+      display: inline-block!important;
+      width: 20px!important;
+    }
+    .prettycheckbox, .edit-page .prettyradio {
+      display: inline-block;
+      min-width: 100px;
+    }
+  }
+}
+
+.lista_lugares {
+  color:@oscuro;
+  font-family:proxima;
+  font-weight:300;
+}

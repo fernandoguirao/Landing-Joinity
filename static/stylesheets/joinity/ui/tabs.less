@@ -1,0 +1,32 @@
+  ul.nav.nav-tabs {
+    margin-top:30px;
+    border-bottom:1px solid rgba(red(@amarillo-claro),green(@amarillo-claro),blue(@amarillo-claro),.5);
+    padding-bottom:5px;
+    text-align:center;
+    position:relative;
+    margin-bottom:20px;
+    overflow:hidden;
+    height:50px;
+    li {
+      float:none;
+      display:inline-block;
+    }
+    .btn {
+      border-color:transparent;
+      &:hover {
+        /* border:1px solid @claro; */
+        background-color:rgba(255,255,255,.1);
+        color:#FDEFB4;
+      }
+    }
+    .active a {
+      background-color:transparent!important;
+      color:@amarillo;
+      border-color:rgba(red(@amarillo-claro),green(@amarillo-claro),blue(@amarillo-claro),.5);
+      &:hover {
+        border-color:@amarillo-claro;
+        background-color:transparent;
+        color:@amarillo;
+      }
+    }
+  }

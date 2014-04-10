@@ -1,0 +1,79 @@
+.cover {
+  .background-size();
+  background-repeat:no-repeat;
+}
+
+.img {
+
+  .cover;
+  
+  /* TAMAÑOS */
+  
+  &.giant {
+    width:400px;
+    height:400px;
+    .border-radius(10px);
+  }
+  &.big {
+    width:200px;
+    height:200px;
+    .border-radius(8px);
+  }
+  &.normal {
+    width:100px;
+    height:100px;
+    .border-radius(5px);
+  }
+  &.small {
+    width:50px;
+    height:50px;
+    .border-radius(3px);
+  }
+  &.tiny {
+    width:25px;
+    height:25px;
+    .border-radius(2px);
+  }
+  /* VARIANTES */
+  
+  /* Avatares */
+  
+  &.avatar {
+    width:40px;
+    height:40px;
+    .border-radius(3px);
+    &.circle {
+      width:42px;
+      height:42px;
+    }
+    &.big {
+      width:94px;
+      height:94px;
+      min-width:94px;
+      .border-radius(6px);
+    }
+    &.small {
+      width:30px;
+      height:27px;
+    }
+  }
+  
+  /* Otras variantes */
+  
+  &.display-block {
+    display:block;
+    width:100%;
+    .border-radius(0);
+  }
+  &.circle {
+    .border-radius(100px);
+  }
+}
+
+img.img {
+  .background-size(inherit);
+  &.display-block {
+    display:inherit;
+    width:100%;
+  }
+}

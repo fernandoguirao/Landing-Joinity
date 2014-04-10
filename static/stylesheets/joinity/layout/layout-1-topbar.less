@@ -1,0 +1,61 @@
+.topbar-layout {
+  .make-md-column(12);
+  padding:0;
+}
+
+nav.top-bar {
+  background-color:@azul;
+  .make-md-column(12);
+  padding:0 0 0 60px;
+  position:fixed;
+  z-index:16;
+  .logo {
+    height:38px;
+    position: absolute;
+    top:20px;
+  }
+  .btn {
+    .border-radius(0);
+    height: 67px;
+    padding-top: 26px!important;
+    font-size:12px!important;
+    padding-left:20px!important;
+    padding-right:20px!important;
+  }
+  .btn.amarillo {
+    margin-right:-2px;
+  }
+  .btn.azul {
+/*
+    background: -o-linear-gradient(top, #27cce6 0%, #16acc4 100%);
+    background: -ms-linear-gradient(top, #27cce6 0%, #16acc4 100%);
+    background: linear-gradient(to bottom, #27cce6 0%, #16acc4 100%);
+*/
+    background: -o-linear-gradient(top, lighten(@azul,4%) 0%, darken(@azul,4%) 100%);
+    background: -ms-linear-gradient(top, lighten(@azul,4%) 0%, darken(@azul,4%) 100%);
+    background: linear-gradient(to bottom, lighten(@azul,4%) 0%, darken(@azul,4%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@colorinicial', endColorstr='@colorfinal', GradientType=0);
+    padding-left:35px!important;
+    padding-right:35px!important;
+  }
+}
+
+.toggle-right {
+  position: fixed;
+  z-index: 3000;
+  right: 2px;
+  top: 19px;
+  .transition(rotate,.2s);
+  &.gira {
+  -webkit-transform: rotate(45deg); 
+     -moz-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg); 
+       -o-transform: rotate(45deg); 
+          transform: rotate(45deg);
+  background-color:transparent!important;
+  border:0px!important;
+  &:active {
+    .box-shadow(none);
+  }
+  }
+}

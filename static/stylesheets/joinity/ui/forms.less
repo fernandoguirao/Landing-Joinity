@@ -1,0 +1,580 @@
+/*
+
+DOCUMENTACIÓN
+
+Select de notificaciones - > .notification
+
+Checkboxes y radios
+
+El mixin es: .make-checkbox(@size,@color,@color-checked,@color-disabled,@color-label)
+Si queremos que sea una tarea (con estado disabled al hacer check tenemos que meter en un .task el .form-group
+
+*/
+
+/* FORMULARIOS EN GENERAL */
+
+.form {
+  &.giant {
+    .make-md-column(12);
+    &.textarea {
+      min-height:200px;
+    }
+  }
+  &.big {
+    .make-md-column(10);
+    &.textarea {
+      min-height:150px;
+    }
+  }
+  &.normal {
+    .make-md-column(7);
+    &.textarea {
+      min-height:100px;
+    }
+  }
+  &.small {
+    .make-md-column(5);
+    &.textarea {
+      min-height:50px;
+    }
+  }
+  &.tiny {
+    .make-md-column(3);
+    &.textarea {
+      min-height:20px;
+    }
+  }
+}
+
+/* SELECTS Y DROPDOWNS */
+
+.dropdown-menu {
+  color:@oscuro;
+  text-transform: none;
+  padding-bottom:13px;
+  span.text {
+    color:@oscuroclaro;
+  }
+  dt span.text {
+    color: lightblue;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    display: block;
+    margin-left: 14px;
+    border-bottom: 1px dashed lightblue;
+    margin-right: 14px;
+    padding-bottom: 8px;
+    padding-top: 2px;
+  }
+}
+
+.edit-page .dropdown-menu {
+  padding-bottom:0;
+  dt span.text {
+    display:none;
+  }
+}
+
+.notification .dropdown-menu {
+  width:400px;
+  padding-bottom:0;
+  dt {
+    text-transform:uppercase;
+    color:@elcolor;
+    padding:10px;
+  }
+  text-align:left;
+  .unread {
+    background-color:@elcolor;
+    color:@claro;
+    &:hover {
+      background-color:@elcolor!important;
+      color:@claro!important;
+      &:after {
+        color:@claro!important;
+      }
+    }
+  }
+  .read {
+    color:@grisclaro;
+  }
+  a.opt {
+    padding-left:21px!important;
+    white-space:normal;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    padding-right:40px;
+    position:relative;
+    .transition(padding .2s);
+    &:after {
+      content: "\f054";
+      font-family:'fontAwesome';
+      right:24px;
+      color:rgba(0,0,0,.2);
+      position:absolute;
+      top:10px;
+      .transition(right .2s)
+    }
+    &:hover {
+      background-color:rgba(0,0,0,.05);
+      padding-left:40px!important;
+      padding-right:50px!important;
+      color:@gris;
+      &:after {
+        right:35px;
+        color:@gris;
+      }
+    }
+  }
+}
+
+/* INPUTS */
+
+.form-control {
+  &.giant {
+    .input-size(84px; 30px; 30px; 22px; 40px; 7px);
+    margin: 10px 0;
+    &.framed {
+      border-width:10px;
+      .box-shadow(rgba(0, 0, 0, 0.14902) 0px 0px 0px 3px);
+    }
+  }
+  &.big {
+    .input-size(60px; 20px; 20px; 14px; 29px; 5px);
+    margin:10px 0;
+    &.framed {
+      border-width:4px;
+    }
+  }
+  &.normal {
+    .input-size(40px; 14px; 14px; 13px; 20px; 4px);
+    margin:10px 0;
+    &.framed {
+      border-width:3px;
+    }
+  }
+  &.small {
+    .input-size(30px; 15px; 15px; 12px; 16px; 4px);
+    margin:10px 0;
+    &.framed {
+      border-width:3px;
+    }
+  }
+  &.tiny {
+    .input-size(20px; 10px; 10px; 11px; 15px; 2px);
+    margin:10px 0;
+    &.framed {
+      border-width:2px;
+    }
+  }
+  &.framed {
+    border:10px solid @elcolor;
+    &:focus {
+      border-color:lighten(@elcolor,7%);
+      .box-shadow(transparent 0px 0px 0px 0px);
+    }
+/*
+    &.verde {
+      border:10px solid lighten(@verde,15%);
+      background-color:transparent;
+      color:@amarillo!important;
+      .box-shadow(transparent 0px 0px 0px 0px);
+      &:focus {
+        border-color:lighten(@amarillo,7%);
+        .box-shadow(transparent 0px 0px 0px 0px);
+      }
+      &::-webkit-input-placeholder{
+        color:#FDEFB4;
+        font-family:'Proxima';
+      }
+    }
+  */
+  }
+}
+
+/*
+PLACEHOLDER
+.placeholder,input::-webkit-input-placeholder,input:-moz-placeholder { color: @claro!important; }
+*/
+/* Grupos formados por un input y otros elementos */
+
+.form-group {
+  &.form-user {
+    .img {
+      position:absolute;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .form-control {
+      padding-left:57px;
+      padding-right:139px;
+      @media (max-width:@screen-xs-max) {
+        padding-left:15px;
+        padding-right:104px;
+      }
+    }
+    .button-group {
+      position: absolute;
+      margin-top: -63px;
+      right: 37px;
+      .btn {
+        left:1px;
+        position:relative;
+      }
+      .changeTo {
+        left:-1px;
+      }
+      @media (max-width:@screen-xs-max) {
+        right:29px;
+        margin-top:-59px;
+        .btn {
+          padding:9px!important;
+        }
+/*
+        .btn {
+          width: 61px;
+          margin: -4px -5px;
+          padding: 19px 31px !important;
+          left:-2px;
+          
+        }
+        .one-btn {
+          left:2px;
+        }
+        i {
+          margin-left:-11px;
+        }
+*/
+      }
+    }
+  }
+}
+
+/* CHECKBOXES Y RADIOS */
+
+/* .make-checkbox(@size,@color,@color-checked,@color-disabled,@color-label,@after-top,@after-left) */
+
+.check-block {
+  h2 {
+    margin-bottom:20px;
+    text-align:center;
+    font-family:proxima;
+    font-weight:500;
+  }
+  .btn {
+    margin-top:20px;
+  }
+  .prettycheckbox, .prettyradio {
+    width:100%;
+    padding: 12px 19px 8px;
+    .border-radius(5px);
+    &:hover {
+      background-color: rgba(0,0,0,.2);
+      label {
+        color:@amarillo!important;
+      }
+    }
+  }
+  &.form-group.normal.claro label {
+    margin-left: 19px;
+    margin-top: -1px;
+    font-family:proxima;
+    font-weight:100;
+  }
+}
+
+.form-group.normal.grisclaro label {
+  font-size: 15px!important;
+  margin-left: 11px!important;
+  font-family: proxima!important;
+  margin-top: 0px!important;
+}
+.form-group {
+  clear:both;
+  label {
+    color:@oscuro;
+    font-weight:300;
+  }
+  
+  &.giant {
+    .make-checkbox(55px,@azul,@claro,@grisclaro,@oscuro,1.6%,2.3%);
+    .make-radio(55px,@azul,@claro,@grisclaro,@oscuro,1.5%,2.5%);
+  }
+  
+  &.big {
+    .make-checkbox(30px,@grisclaro,@gris,@grisclaro,@oscuro,0.8%,1.2%);
+    .make-radio(30px,@gris,@oscuro,@grisclaro,@oscuro,0.8%,1.5%);
+    font-family:'Proxima';
+    .prettycheckbox a {
+      width:22px;
+      height:22px;
+      margin-top:7px;
+      margin-right:10px;
+      &.checked {
+        &:after {
+          margin-top:0.2%;
+          margin-left:1.1%;
+        }
+      }
+    }
+    label {
+      margin-top:0;
+    }
+  }
+  
+  &.normal {
+    .make-checkbox(20px,@rojo,@claro,@grisclaro,@oscuro,0.8%,0.8%);
+    .make-radio(20px,@rojo,@claro,@grisclaro,@oscuro,0.7%,1%);
+    &.grisclaro {
+      .make-checkbox(18px,@grisclaro,@oscuro,@gris,@gris,0.8%,0.95%);
+      .make-radio(18px,@grisclaro,@oscuro,@gris,@gris,0.8%,0.95%);
+    }
+    &.claro {
+      .make-checkbox(18px,@claro,@verde,@claro,@claro,0.8%,0.95%);
+      .make-radio(18px,@claro,@verde,@claro,@claro,0.8%,0.95%);
+    }
+  }
+  
+  &.small {
+    .make-checkbox(18px,@rojo,@claro,@grisclaro,@oscuro,0.8%,0.8%);
+    .make-radio(18px,@rojo,@claro,@grisclaro,@oscuro,0.6%,0.9%);
+    margin-top: 5px;
+    margin-bottom:0px;
+    &.claro {
+      .make-checkbox(18px,@claro,@oscuro,@gris,@gris,0.8%,0.8%)
+    }
+    .prettycheckbox a.checked:after {
+      font-size: 11px!important;
+      margin-top: 0.7%!important;
+      margin-left: 1.2%!important;
+    }
+  }
+}
+
+.modal-body .form-group.normal.claro label {
+  font-size:18px!important;
+  font-weight: normal!important;
+}
+.form-check label.normal {
+  margin-top: 10px!important;
+  margin-bottom: 18px!important;
+}
+.form-block .prettycheckbox {
+  display:block!important;
+}
+
+.form-block {
+  width:100%!important;
+  .help-block {
+    margin-top:-12px!important;
+  }
+}
+
+/* DATE PICKER */
+
+.datepicker {
+  .box-shadow(none);
+  thead {
+    background-color: @azul;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-left: 21px;
+    top: 0;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    color:@claro;
+    th.datepicker-switch {
+      font-size:15px;
+      font-weight:normal;
+      color:@claro;
+      font-family:'Proxima';
+      font-weight:lighter;
+      span {
+        font-weight:bolder;
+        margin-right:4px;
+        color:darken(@azul,25%);
+      }
+    }
+    th:hover {
+      background-color:darken(@azul,5%)!important;
+    }
+    tr:nth-child(2) {
+      background-color:@grisclaro!important;
+      color:@oscuro;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding-left: 20px;
+      font-size: 12.5px;
+      font-weight: 100;
+      top:36px;
+      th:hover {
+        background-color:transparent!important;
+      }
+    }
+  }
+  tbody {
+    margin-top: 66px!important;
+    display: inline-block;
+    margin-bottom:5px;
+  }
+  .datepicker-months tbody,.datepicker-years tbody {
+    width:200px!important;
+    display:block!important;
+    position:relative!important;
+    margin-top:30px!important;
+    padding-left:15px;
+    margin-bottom:0px;
+     tr {
+      td {
+        width:100%;
+        span {
+          display:inline;
+          position:relative;
+          width:50px;
+          float:left;
+          
+        }
+      }
+    }
+  }
+}
+
+/* PUNTUAR */
+
+.votacion {
+  .icon-star {
+    color:rgba(0,0,0,.3);
+    margin-right:3px;
+    font-size:16px;
+    &.active {
+      color:@claro;
+      .text-shadow(0px 0px 2px rgba(0,0,0,.5));
+    }
+  }
+  &.no-votado {
+    .icon-star {
+      cursor:pointer;
+      &:hover {
+        color:@claro;
+      }
+    }
+  }
+}
+
+/* INPUT: SUBE O CAMBIA IMAGEN O YA EXISTE */
+
+.cambiaImagen {
+  .img {
+    width:217px!important;
+    position:relative;
+    cursor:pointer;
+    &:after {
+      content:@remove-sign;
+      font-family:fontawesome;
+      font-size: 30px;
+      position: absolute;
+      right: -12px;
+      margin-top: -18px;
+      color:@rojo;
+    }
+    &:hover {
+      &:after {
+        color:lighten(@rojo,10%);
+      }
+    }
+  }
+  .existe {
+    display:none;
+  }
+}
+
+/* AÑADE UNA IMAGEN MÁS */
+
+
+
+/* INPUT TYPE FILE */
+
+/*
+.propiedades-input(){
+  margin-bottom: 0;
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  .user-select(none);
+  cursor: pointer;
+  margin:2px 10px 2px 2px;
+  font-family:montserrat;
+  .button-variant(@oscuro,@grisclaro,@grisclaro);
+  .button-size(15px; 15px; 13px; auto; 4px)!important;
+  padding: 15px 20px!important;
+  position:relative;
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+}
+
+input[type="file"] {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-family: proxima;
+  padding-top: 16px;
+  &:after {
+    content:"hello";
+    .propiedades-input();
+    width:50px;
+    height:50px;
+  }
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  .propiedades-input();
+}
+
+input[type="file"] > input[type="button"] {
+  .propiedades-input();
+}
+*/
+
+.form-inline .inputG {
+  .btn {
+    width:9%;
+  }
+  input {
+    width:89%;
+    display:inline-block;
+  }
+}
+
+textarea.big {
+  padding-top:20px!important;
+}
+
+.clearInput {
+  i {
+    color: @gris!important;
+  }
+  top: 10px;
+  position: absolute;
+  right: 9px;
+}
+
+.form-large .clearfix {
+  min-width:400px;
+}

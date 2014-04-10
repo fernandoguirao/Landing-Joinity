@@ -1,0 +1,241 @@
+.modal-header {
+  min-height:58px;
+  .close {
+    color:@claro;
+    .opacity(1);
+    .border-radius(30px);
+    border:3px solid @claro;
+    width:42px;
+    height:42px;
+    text-align:center;
+    font-size:18.4px;
+    font-weight:lighter;
+    padding-top:8px;
+    z-index:4000;
+    &:hover {
+      color:@amarillo;
+      border-color:@amarillo;
+    }
+    &:active {
+      color:darken(@verde,10%);
+      border-color:darken(@verde,10%);
+    }
+  }
+}
+.modal-content {
+  margin-top:0;
+}
+.modal-body {
+  .lonely {
+    margin-top:40px;
+  }
+  form {
+    label {
+      color:@claro!important;
+    }
+    label {
+      font-family: proxima;
+      font-size: 23px!important;
+      font-style: inherit;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+    .big.framed {
+      border-width:5px!important;
+      background-color:#41e4c4;
+      .placeholder(darken(@verde,10%));
+      font-size:17px;
+      color:@oscuro!important;
+      border:none!important;
+      &:focus {
+        border:none!important;
+      }
+    }
+    .btn.verde {
+      background-color:darken(@verde,5%);
+    }
+    .fileupload-preview {
+      color:@claro!important;
+    }
+  }
+  .stars {
+    float:left;
+    display:inline-block;
+    i {
+      margin-right:2px;
+      color:@amarillo-claro;
+      display:inline;
+    }
+  }
+  label.normal {
+    font-weight: normal;
+    font-size: 19px!important;
+  }
+  .form-number {
+    width: 100px;
+    float:left;
+    font-weight:bold;
+  }
+  .number-form {
+    color: @claro;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 14px;
+    &.float-right {
+      font-size: 30px;
+      margin-top: -2px;
+      color: @amarillo;
+      border-bottom: 1px dashed @amarillo;
+    }
+  }
+  .help-block {
+    margin-top:-4px;
+    margin-left:8px;
+    color:@verde-oscuro!important;
+    font-family:proxima;
+  }
+  .list {
+    li:hover {
+      background-color:rgba(255,255,255,.2);
+      cursor:pointer;
+      .assigned:before {
+        content:"Remove?"!important;
+        position: absolute;
+        width:100%;
+        background-color:rgba(0,0,0,.5);
+        color:@amarillo;
+        left:0;
+        top:0;
+        height:100%;
+        .border-radius(5px);
+        padding-top:12px;
+      }
+      .assign {
+        .opacity(1);
+      }
+    }
+    .assign {
+      .opacity(0);
+      .transition(opacity .2s);
+    }
+    p.claro {
+      span {
+        font-size:12px;
+      }
+    }
+  }
+.form-group.normal.claro .prettyradio a.checked:after {
+    margin-top: 0.74%!important;
+    margin-left: 0.94%!important;
+  }
+  .form-group.normal.claro .prettycheckbox a.checked:after {
+    margin-top: .75%!important;
+    margin-left: .84%!important;
+  }
+}
+
+@media (max-width:@screen-sm-max) {
+    
+  .modal-content {
+    margin-top:27px;
+  }
+  .modal {
+    z-index:3002;
+  }
+  .modal-backdrop {
+    z-index:3001;
+  }
+}
+
+.results-content.no-filter.oculto {
+  .opacity(1)!important;
+}
+
+ // MODAL JOINITY
+
+ .modaljoinity {
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:30000;
+  text-align: center;
+  .m-box {
+    position: relative;
+    z-index: 2;
+    width:353px;
+    display: inline-block;
+    margin-top:106px;
+    .m-header {
+      background-color:@verde;
+      background-image:url('../images/ui/fondoiconos.png');
+      padding-top:40px;
+      padding-bottom:31px;
+      p {
+        color:white;
+        font-weight: 100;
+        font-size:19px;
+        margin-top:30px;
+
+      }
+    }
+    .m-body {
+      background-color:#e7e5d9;
+      a {
+        font-size:14.6px;
+        padding: 19px 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color:@oscuro;
+        .transition(background-color .25s);
+        span {
+          .transition(color .25s);
+        }
+        &:hover {
+          text-decoration:none;
+          background-color:rgba(0,0,0,.2);
+          span {
+            border-bottom:1px dashed;
+            color:@claro;
+          }
+        }
+        span {
+          color:@oscuro;
+        }
+        &.m-gris {
+          background-color:#dbd8c9;
+          &:hover {
+            background-color:rgba(0,0,0,.25);
+          }
+        }
+      }
+    }
+    .m-close {
+      color: @claro;
+      border: 3px solid @claro;
+      border-radius: 30px;
+      padding: 10px 12px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-top: 22px;
+      display: inline-block;
+      cursor:pointer;
+      &:hover {
+        color:white;
+        border-color:white;
+        text-decoration: none;
+      }
+    }
+  }
+  .m-background {
+    background-color:rgba(0,0,0,.80);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+}

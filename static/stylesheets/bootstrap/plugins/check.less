@@ -1,0 +1,168 @@
+/* Mixins check */
+
+
+
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix {*zoom: 1;}
+
+.prettycheckbox,
+.prettyradio {
+    display: inline-block;
+    padding:0;
+    margin:0;
+    a {
+      width: 20px;
+      height: 20px;
+      background-color:@grisclaro;
+      display: block;
+      float: left;
+      cursor: pointer;
+      margin:0;
+      margin-top:4px;
+    }
+}
+
+.prettycheckbox {
+  a {
+    &:focus,&:hover {
+      border:1px solid @elcolor;
+    }
+    &.checked {
+      text-decoration:none;
+      &:after {
+        content:"\f00c";
+        font-family:"fontawesome";
+        font-size:15px;
+        text-align:center;
+        color:@elcolor;
+        margin-top:-5px;
+        margin-left:2px;
+      }
+      &:focus,&:hover {
+        border:0px;
+      }
+    }
+  }
+}
+
+.prettyradio {
+  a {
+    .border-radius(100px);
+    &:focus,&:hover {
+      border:1px solid @elcolor;
+    }
+    &.checked {
+      text-decoration:none;
+      &:after {
+        content: "\f111";
+        font-family: "fontawesome";
+        font-size: 14px;
+        text-align: center;
+        color: #18b8d2;
+        margin-top: 0px;
+        margin-left: 4px;
+      }
+      &:focus,&:hover {
+        border:0px;
+      }
+    }
+  }
+}
+
+.prettycheckbox a:focus,
+.prettyradio a:focus {outline: 0 none;}
+
+.prettycheckbox label,
+.prettyradio label {
+  display: block;
+  float: left;
+  margin: 6px 5px;
+  cursor: pointer;
+}
+
+.prettycheckbox.disabled a,
+.prettyradio.disabled a,
+.prettycheckbox.disabled label,
+.prettyradio.disabled label{
+  cursor:not-allowed;
+}
+
+.make-checkbox(@size,@color,@color-checked,@color-disabled,@color-label,@after-top,@after-left) {
+
+  .prettycheckbox a {
+    width:@size;
+    height:@size;
+    background-color:@color;
+    &:hover,&:focus {
+      background-color:darken(@color,10%);
+      border:0px;
+    }
+    &.checked {
+      background-color:@color;
+      &:after {
+        font-size:(@size*25)/55;
+        color:@color-checked;
+        position: absolute;
+        margin-top: @after-top;
+        margin-left: @after-left;
+      }
+    }
+  }
+  
+  label {
+    color:@color-label;
+    font-size:(13*@size)/20;
+    width:83%;
+    position:relative;
+    margin-top:1px;
+  }
+  
+  .prettycheckbox.disabled a {
+    background-color:@color-disabled;
+    label {
+      color:@color-disabled;
+    }
+  }
+  
+  .task + a.checked + label {
+    color:@color-disabled!important;
+    text-decoration:line-through!important;
+  }
+}
+
+.make-radio(@size,@color,@color-checked,@color-disabled,@color-label,@after-top,@after-left) {
+
+  .prettyradio a {
+    width:@size;
+    height:@size;
+    background-color:@color;
+    &:hover,&:focus {
+      background-color:darken(@color,10%);
+      border:0px;
+    }
+    &.checked {
+      background-color:@color;
+      &:after {
+        font-size:(@size*25)/55;
+        color:@color-checked;
+        position: absolute;
+        margin-top: @after-top;
+        margin-left: @after-left;
+      }
+    }
+  }
+  
+  label {
+    color:@color-label;
+    font-size:(13*@size)/20;
+    margin-left:9px;
+  }
+  
+}

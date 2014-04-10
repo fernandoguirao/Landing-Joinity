@@ -1,0 +1,79 @@
+.layout-joinity .messages.comments {
+  margin-top:67px!important;
+  form {
+    margin-top:-67px!important;
+  }
+  p {
+    margin-top: 10px!important;
+  }
+}
+.messages.comments {
+  float: none;
+  display: block;
+  padding: 0;
+  width: 100%!important;
+  margin: 18px 0 0!important;
+  text-align: left;
+  form .form-group {
+    width:100%;
+    margin-left:0;
+  }
+  form .avatar {
+    height: 29px;
+    width: 29px;
+    margin-top: 5px;
+    margin-left: 6px;
+  }
+  .btn.tiny {
+    margin-top: 18px;
+    padding: 7px 13px!important;
+    margin-right: -4px!important;
+  }
+  form .form-group.form-user .form-control {
+    padding-left:16px;
+    padding-right:52px;
+    border-color:@grisclaro;
+  }
+  .bubble {
+    width:100%;
+    /* padding-top:7px; */
+    padding-top:0px;
+    padding-bottom:0px;
+    background-color:transparent!important;
+    &:after {
+      display:none;
+    }
+    .img {
+      left: 1px!important;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      .border-radius(2px);
+    }
+  }
+  p.small {
+    margin-top: 13px;
+    padding-left: 30px;
+    top: 2px;
+    position: relative;
+    span {
+      color:@azul;
+    }
+  }
+  .btn.grisclaro {
+    .icon-edit.icon-large {
+      margin-left: 6px;
+    }
+    @media (max-width:@screen-xs-max) {
+      padding-left: 25px!important;
+      .icon-edit.icon-large {
+        margin-left: -11px;
+      }
+    }
+  }
+  .button-group {
+    @media (max-width:@screen-xs-max) {
+      margin-top:-63px;
+    }
+  }
+}

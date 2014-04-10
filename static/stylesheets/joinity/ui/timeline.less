@@ -1,0 +1,208 @@
+.timeline {
+  padding-top:20px;
+  .line {
+    border-top:50px solid @grisclaro;
+    height:110%;
+    width:5px;
+    background-color:@grisclaro;
+    position:absolute;
+    margin-left:31px;
+    margin-top:-35px;
+    @media(max-width:1233px) {
+      margin-left: 6%;
+    }
+    @media(max-width:@screen-xs-max) {
+      margin-left: 30px;
+    }
+    @media(max-width:@screen-xs-min) {
+      margin-left:6%;
+    }
+    
+  }
+  .item {
+    padding-bottom:22px;
+    display: block;
+    clear: both!important;
+    .item-data {
+      .make-xs-column(2.3);
+      .make-sm-column(2.3);
+      .make-md-column(2.3);
+      padding-left:0;
+      .btn.azul,.btn.verde,.btn.amarillo,.btn.rojo {
+        padding-left:18px;
+        max-width:60px;
+        @media(max-width:1233px) and (min-width:@screen-xs-max) {
+          padding-top:10px!important;
+          padding-bottom:10px!important;
+        }
+      }
+      .btn.tiny {
+        max-width: 60px;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        text-align: center;
+      }
+    }
+    .item-content {
+      .make-xs-column(9.7);
+      .make-sm-column(9.7);
+      .make-md-column(9.7);
+      padding-right:0;
+      margin-bottom: 19px;
+      .img.avatar.tiny {
+        float:left;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -4px;
+        margin-right: 8px;
+      }
+      h6 {
+        a {
+          margin-right:5px;
+        }
+      }
+      p {
+        margin-top:13px;
+      }
+    }
+    &.picture,&.movie {
+      .item-content {
+        .img.big {
+          .border-radius(7px);
+          margin-top:8px;
+          display:inline-block;
+          width:100%!important;
+          height:200px!important;
+          margin-bottom:10px;
+          height:inherit;
+          
+        }
+      }
+    }
+    &.recomendacion {
+      a.link-rec {
+        top:-17px!important;
+        position:relative;
+        p {
+          top: 49px;
+          position: relative;
+          text-align: center;
+        }
+      }
+      .img {
+        height: 58px;
+      }
+    }
+    /*
+&.movie {
+      .item-content {
+        .img.big:after {
+          content:@play;
+          width:60px;
+          height:60px;
+          .border-radius(5px);
+          background-color:@rojo;
+          color:@claro;
+          text-align: center;
+          padding-top: 8px;
+          font-family: FontAwesome;
+          display: inline-block;
+          margin: 67px 63px;
+          position: relative;
+          font-size:31px;
+        }
+      }
+    }
+*/
+  }
+  .poll {
+    color:@grisclaro;
+    .imgRespuesta {
+      width:40px;
+      height:40px;
+      .border-radius(4px);
+      .cover();
+      float:left;
+      position:relative;
+    }
+    .progress {
+      background-color:@grisclaro;
+      .box-shadow(none);
+      height:15px;
+      width:241px;
+      top: 3px;
+      position: relative;
+      .bar {
+        background-color:@amarillo;
+        height:100%;
+      }
+    }
+    .resultado {
+      .numVotos,.progress {
+        /* display:inline; */
+      }
+      .numVotos {
+        width:40px;
+        float:left;
+      }
+    }
+    .icono {
+      background-color:@amarillo;
+      i.iconos {
+        line-height:1.6!important;
+      }
+    }
+    .imgRespuesta {
+      margin-right:11px!important;
+    }
+    p {
+      height: 40px!important;
+      overflow:hidden;
+    }
+    .enunciado {
+      margin-top:11px;
+      background-color: #fad542;
+      color:@oscuroclaro;
+      padding: 10px 17px;
+      overflow: inherit;
+      height: auto!important;
+      text-transform:inherit!important;
+    }
+    .laRespuesta {
+      cursor:pointer;
+    }
+    .laRespuesta:hover {
+      .imgRespuesta:before {
+        content:@star;
+        color:@amarillo;
+        font-family:fontAwesome;
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        background-color:rgba(0,0,0,.5);
+        text-align:center;
+        padding-top:9px;
+        font-size:18px;
+      }
+    }
+  }
+  .categorybtn {
+    padding-left:0px!important;
+    padding-right:0px!important;
+    @media(max-width:@screen-xs-max) {
+      padding-top: 10px!important;
+      padding-bottom: 10px!important;
+    }
+    i {
+      margin-right:0px;
+    }
+  }
+}
+.changeTo .icon-remove-sign.icon-large{
+  top: 0px;
+  position: relative;
+  left: 0px;
+}

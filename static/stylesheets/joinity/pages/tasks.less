@@ -1,0 +1,112 @@
+.tasks {
+  ul {
+    li.task {
+      display: inline-block;
+      margin:-6px -30px 0;
+      padding:17px 30px 0;
+      .transition(all .3s);
+      border:1px solid @claro;
+      @media(max-width:@screen-sm-max){
+        width:127%;
+        padding-right:13%;
+        padding-bottom:12px;
+      }
+      @media (min-width:@screen-sm-max){
+        width:127%;
+        padding-right:13%;
+      }
+      .form-group {
+        .make-sm-column(9);
+        .make-md-column(9.3);
+        padding:0;
+        margin:0 0 6px;
+        position: relative;
+        left:-15px;
+        .table-cell.primero {
+          width:40px;
+        }
+        label {
+          width:80%!important;
+          font-size:18px;
+          min-width:200px;
+          margin-top:11px;
+          top:3px;
+          position: relative;
+          margin-bottom:11px;
+        }
+      }
+      .date {
+        .make-sm-column(1);
+        .make-md-column(2.4);
+        text-align:left;
+        padding-left:0;
+        max-height:35px;
+        @media(max-width:@screen-xs-max){
+          position: absolute;
+          right:4px;
+          margin-top:-57px;
+        }
+        h4 {
+          font-size:14px;
+          text-align:center;
+          @media(max-width:@screen-xs-max){
+            margin-top:28px;
+          }
+          span {
+            display:block;
+            font-size:21px;
+          }
+        }
+      }
+      .more-info {
+        .make-md-column(12);
+        margin-top:11px;
+        padding-left:32px;
+        margin-bottom:14px;
+        .opacity(0);
+        max-height:0;
+        display:inherit!important;
+        .transition(all .4s);
+        width:91%;
+        @media(max-width:@screen-xs-max){
+          .opacity(1)!important;
+          width:94%;
+        }
+        .asignada {
+          .opacity(0);
+          .transition(opacity .4s);
+          &.show {
+            .opacity(1);
+          }
+        }
+        .sub {
+          font-style:normal;
+          margin-bottom:2px;
+          font-size:14px;
+        }
+      }
+      &:hover {
+        background-color:rgba(red(@claro),green(@claro),blue(@claro),.5);
+        .more-info {
+          .opacity(1);
+          max-height:30000px;
+        }
+        .date {
+          h4 {
+            color:@gris;
+          }
+        }
+      }
+    }
+  }
+}
+
+#contenedor_tareas header {
+  padding-bottom:32px;
+}
+
+.primero.checked + label {
+  color: #dbd8c9 !important;
+  text-decoration: line-through !important;
+}
+

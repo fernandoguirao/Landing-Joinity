@@ -1,0 +1,109 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+ { 
+ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; 
+}
+
+li {
+  list-style-type: none;
+}
+
+/*
+ul, li, li a {
+  display:inline-block;
+}
+*/
+
+a,a:hover {
+  text-decoration: none;
+}
+
+html,body {
+  /* min-width:769px; */
+}
+
+.centerer {
+  display:inline-block;
+  text-align:left;
+}
+
+.centrador {
+  width:100%;
+  display:block;
+  text-align:center;
+}
+
+.float-right {
+  float:right;
+  &:after {
+    clear:both;
+  }
+}
+
+.float-left {
+  float:left;
+}
+
+.clear-both {
+  clear:both;
+  width:1px;
+  height:1px;
+}
+
+.cl-both {
+  clear:both;
+}
+
+.invisible {
+  .opacity(0);
+  position:absolute;
+  z-index:-1;
+}
+
+.inline {
+  display:inline;
+}
+
+.last {
+  margin-right:0!important;
+}
+
+.first {
+  margin-left:0!important
+}
+
+.position-right {
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+.more-margin {
+  &.vertical{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+}
+
+.reveal {
+  cursor:pointer;
+  h6 {
+    display: inline-block;
+    padding-bottom: 6px;
+    top:8px;
+    position: relative;
+    &:hover {
+      border-bottom:1px dashed white;
+    }
+  }
+}
+
+.destacado {
+  border: 10px solid red;
+}
+
+.hidden-xs {
+  @media(max-width:@screen-xs-max) {
+    display:none!important;
+  }
+}

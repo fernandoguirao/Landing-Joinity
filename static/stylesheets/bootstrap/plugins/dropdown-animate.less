@@ -1,0 +1,15 @@
+.left-bar {
+  .open > .dropdown-menu {
+    .opacity(1);
+    margin-top:0;
+    pointer-events: all;
+  }
+  
+  .dropdown-menu {
+    display:block;
+    .opacity(0);
+    margin-top:-40px;
+    pointer-events: none;
+    .transition(all .2s ease-out);
+  }
+}
